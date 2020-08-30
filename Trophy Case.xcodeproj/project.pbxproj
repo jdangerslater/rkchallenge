@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A76BCCF524FB27FF00744224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCCF424FB27FF00744224 /* AppDelegate.swift */; };
+		A76BCCF724FB27FF00744224 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCCF624FB27FF00744224 /* SceneDelegate.swift */; };
+		A76BCCF924FB27FF00744224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCCF824FB27FF00744224 /* ViewController.swift */; };
+		A76BCCFC24FB27FF00744224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76BCCFA24FB27FF00744224 /* Main.storyboard */; };
+		A76BCCFE24FB280200744224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76BCCFD24FB280200744224 /* Assets.xcassets */; };
+		A76BCD0124FB280200744224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76BCCFF24FB280200744224 /* LaunchScreen.storyboard */; };
+		A76BCD0C24FB280200744224 /* Trophy_CaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD0B24FB280200744224 /* Trophy_CaseTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A76BCD0824FB280200744224 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76BCCE924FB27FF00744224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76BCCF024FB27FF00744224;
+			remoteInfo = "Trophy Case";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A76BCCF124FB27FF00744224 /* Trophy Case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trophy Case.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76BCCF424FB27FF00744224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A76BCCF624FB27FF00744224 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A76BCCF824FB27FF00744224 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A76BCCFB24FB27FF00744224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A76BCCFD24FB280200744224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A76BCD0024FB280200744224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A76BCD0224FB280200744224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76BCD0724FB280200744224 /* Trophy CaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trophy CaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76BCD0B24FB280200744224 /* Trophy_CaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trophy_CaseTests.swift; sourceTree = "<group>"; };
+		A76BCD0D24FB280200744224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A76BCCEE24FB27FF00744224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76BCD0424FB280200744224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A76BCCE824FB27FF00744224 = {
+			isa = PBXGroup;
+			children = (
+				A76BCCF324FB27FF00744224 /* Trophy Case */,
+				A76BCD0A24FB280200744224 /* Trophy CaseTests */,
+				A76BCCF224FB27FF00744224 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A76BCCF224FB27FF00744224 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCCF124FB27FF00744224 /* Trophy Case.app */,
+				A76BCD0724FB280200744224 /* Trophy CaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A76BCCF324FB27FF00744224 /* Trophy Case */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCCF424FB27FF00744224 /* AppDelegate.swift */,
+				A76BCCF624FB27FF00744224 /* SceneDelegate.swift */,
+				A76BCCF824FB27FF00744224 /* ViewController.swift */,
+				A76BCCFA24FB27FF00744224 /* Main.storyboard */,
+				A76BCCFD24FB280200744224 /* Assets.xcassets */,
+				A76BCCFF24FB280200744224 /* LaunchScreen.storyboard */,
+				A76BCD0224FB280200744224 /* Info.plist */,
+			);
+			path = "Trophy Case";
+			sourceTree = "<group>";
+		};
+		A76BCD0A24FB280200744224 /* Trophy CaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCD0B24FB280200744224 /* Trophy_CaseTests.swift */,
+				A76BCD0D24FB280200744224 /* Info.plist */,
+			);
+			path = "Trophy CaseTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A76BCCF024FB27FF00744224 /* Trophy Case */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76BCD1024FB280200744224 /* Build configuration list for PBXNativeTarget "Trophy Case" */;
+			buildPhases = (
+				A76BCCED24FB27FF00744224 /* Sources */,
+				A76BCCEE24FB27FF00744224 /* Frameworks */,
+				A76BCCEF24FB27FF00744224 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trophy Case";
+			productName = "Trophy Case";
+			productReference = A76BCCF124FB27FF00744224 /* Trophy Case.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A76BCD0624FB280200744224 /* Trophy CaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76BCD1324FB280200744224 /* Build configuration list for PBXNativeTarget "Trophy CaseTests" */;
+			buildPhases = (
+				A76BCD0324FB280200744224 /* Sources */,
+				A76BCD0424FB280200744224 /* Frameworks */,
+				A76BCD0524FB280200744224 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A76BCD0924FB280200744224 /* PBXTargetDependency */,
+			);
+			name = "Trophy CaseTests";
+			productName = "Trophy CaseTests";
+			productReference = A76BCD0724FB280200744224 /* Trophy CaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A76BCCE924FB27FF00744224 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Jason Slater";
+				TargetAttributes = {
+					A76BCCF024FB27FF00744224 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					A76BCD0624FB280200744224 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = A76BCCF024FB27FF00744224;
+					};
+				};
+			};
+			buildConfigurationList = A76BCCEC24FB27FF00744224 /* Build configuration list for PBXProject "Trophy Case" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A76BCCE824FB27FF00744224;
+			productRefGroup = A76BCCF224FB27FF00744224 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A76BCCF024FB27FF00744224 /* Trophy Case */,
+				A76BCD0624FB280200744224 /* Trophy CaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A76BCCEF24FB27FF00744224 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76BCD0124FB280200744224 /* LaunchScreen.storyboard in Resources */,
+				A76BCCFE24FB280200744224 /* Assets.xcassets in Resources */,
+				A76BCCFC24FB27FF00744224 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76BCD0524FB280200744224 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A76BCCED24FB27FF00744224 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76BCCF924FB27FF00744224 /* ViewController.swift in Sources */,
+				A76BCCF524FB27FF00744224 /* AppDelegate.swift in Sources */,
+				A76BCCF724FB27FF00744224 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76BCD0324FB280200744224 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76BCD0C24FB280200744224 /* Trophy_CaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A76BCD0924FB280200744224 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A76BCCF024FB27FF00744224 /* Trophy Case */;
+			targetProxy = A76BCD0824FB280200744224 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A76BCCFA24FB27FF00744224 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76BCCFB24FB27FF00744224 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A76BCCFF24FB280200744224 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76BCD0024FB280200744224 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A76BCD0E24FB280200744224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A76BCD0F24FB280200744224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A76BCD1124FB280200744224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67VCM785B4;
+				INFOPLIST_FILE = "Trophy Case/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonslater.Trophy-Case";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A76BCD1224FB280200744224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67VCM785B4;
+				INFOPLIST_FILE = "Trophy Case/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonslater.Trophy-Case";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A76BCD1424FB280200744224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67VCM785B4;
+				INFOPLIST_FILE = "Trophy CaseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonslater.Trophy-CaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trophy Case.app/Trophy Case";
+			};
+			name = Debug;
+		};
+		A76BCD1524FB280200744224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67VCM785B4;
+				INFOPLIST_FILE = "Trophy CaseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonslater.Trophy-CaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trophy Case.app/Trophy Case";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A76BCCEC24FB27FF00744224 /* Build configuration list for PBXProject "Trophy Case" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76BCD0E24FB280200744224 /* Debug */,
+				A76BCD0F24FB280200744224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76BCD1024FB280200744224 /* Build configuration list for PBXNativeTarget "Trophy Case" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76BCD1124FB280200744224 /* Debug */,
+				A76BCD1224FB280200744224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76BCD1324FB280200744224 /* Build configuration list for PBXNativeTarget "Trophy CaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76BCD1424FB280200744224 /* Debug */,
+				A76BCD1524FB280200744224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A76BCCE924FB27FF00744224 /* Project object */;
+}
