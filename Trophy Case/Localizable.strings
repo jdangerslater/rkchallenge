@@ -1,0 +1,20 @@
+/* 
+  copy.strings
+  Trophy Case
+
+  Created by Jason Slater on 2020-09-01.
+  Copyright © 2020 Jason Slater. All rights reserved.
+*/
+
+"longest_run" = "Longest Run";
+"highest_elevation" = "Highest Elevation";
+"fast_5k" = "Fastest 5K";
+"fast_10k" = "Fastest 10K";
+"half_marathon" = "Half Marathon";
+"marathon" = "Marathon";
+"virtual_half_marathon" = "Virtual Half Marathon Race";
+"tokyo_hakone" = "Tokyo-Hakone Ekiden 2020";
+"virtual_10k" = "Virtual 10K Race";
+"hakone_ekiden" = "Hakone Ekiden";
+"singapore_ekiden" = "Mizuno Singapore Ekiden 2020";
+"virtual_5k" = "Virtual 5K Race";
