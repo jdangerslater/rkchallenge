@@ -7,83 +7,165 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 private let reuseIdentifier = "Cell"
+private let headerIdentifier = "Header"
 
 class TrophyCaseViewController: UICollectionViewController {
+	
+	
+	// MARK: Styles
+	
+	lazy var paragraphStyle: NSParagraphStyle = {
+		let style = NSMutableParagraphStyle()
+		style.alignment = .center
+		
+		return style
+	}()
+	
+	lazy var boldStyle: [NSAttributedString.Key: Any] = {
+		return [
+			.font: UIFont.systemFont(ofSize: 16, weight: .bold),
+			.foregroundColor: UIColor.textColour,
+			.paragraphStyle: paragraphStyle
+		]
+	}()
+	
+	lazy var lightStyle: [NSAttributedString.Key: Any] = {
+		return [
+			.font: UIFont.systemFont(ofSize: 16, weight: .light),
+			.foregroundColor: UIColor.textColour,
+			.paragraphStyle: paragraphStyle
+		]
+	}()
+	
+	lazy var flowLayout = TrophyCaseFlowLayout()
+	
+	private let viewModel = TrophyCaseViewModel()
+	private let disposeBag = DisposeBag()
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		self.collectionView.register(UINib(resource: R.nib.trophyCell),
+											  forCellWithReuseIdentifier: reuseIdentifier)
+		self.collectionView.register(UINib(resource: R.nib.trophyCaseHeaderView),
+											  forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+											  withReuseIdentifier: headerIdentifier)
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+		self.collectionView.collectionViewLayout = flowLayout
+		
+		let backButton = UIButton(type: .custom)
+		backButton.setImage(R.image.back_button(), for: .normal)
+		backButton.contentHorizontalAlignment = .left
+		backButton.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
+		navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+		
+		let menuButton = UIButton(type: .custom)
+		menuButton.setImage(R.image.ellipsis_button(), for: .normal)
+		menuButton.contentHorizontalAlignment = .right
+		menuButton.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
+		navigationItem.rightBarButtonItem = UIBarButtonItem(customView: menuButton)
+		
+		viewModel.disposeBag = disposeBag
+		subscribeToData()
+	}
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+	// MARK: UICollectionViewDataSource
 
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+	override func numberOfSections(in collectionView: UICollectionView) -> Int {
+		return 2
+	}
 
 
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
-    }
+	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		if section == 0 {
+			return viewModel.personalRecords.count
+		}
+		
+		return viewModel.virtualRaces.count
+	}
 
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
-        // Configure the cell
+		if let trophyCell = cell as? TrophyCell {
+			let trophy: TrophyCase.TrophyModel
+			if indexPath.section == 0 {
+				trophy = viewModel.personalRecords[indexPath.row]
+			}
+			else {
+				trophy = viewModel.virtualRaces[indexPath.row]
+			}
+			
+			trophyCell.setTrophyImage(UIImage(named: trophy.type.rawValue))
+			trophyCell.raceDetailsLabel.attributedText = attributedString(for: trophy)
+		}
     
-        return cell
-    }
+		return cell
+	}
+	
+	override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+		let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerIdentifier, for: indexPath)
+		
+		if let headerView = view as? TrophyCaseHeaderView {
+			if indexPath.section == 0 {
+				headerView.titleLabel.text = R.string.localizable.personal_records()
+				headerView.detailsLabel.text = String(format: "%i of %i", viewModel.completedPersonalRecords, viewModel.personalRecords.count)
+			}
+			else if indexPath.section == 1 {
+				headerView.titleLabel.text = R.string.localizable.virtual_races()
+			}
+		}
 
-    // MARK: UICollectionViewDelegate
+		return view
+	}
 
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
+}
 
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
+extension TrophyCaseViewController {
+	func subscribeToData() {
+		viewModel.isLoading.subscribe(onNext: { isLoading in
+			DispatchQueue.main.async {
+				UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+			}
+		}, onError: { error in
+			DispatchQueue.main.async {
+				self.showNoDataError()
+			}
+		}, onCompleted: {
+			DispatchQueue.main.async {
+				self.collectionView!.reloadData()
+			}
+		}).disposed(by: disposeBag)
+		
+		viewModel.loadTrophies()
+	}
+	
+	func showNoDataError() {
+		let alertController = UIAlertController(title: nil, message: R.string.localizable.couldnt_load(), preferredStyle: .alert)
+		alertController.addAction(UIAlertAction(title: R.string.localizable.ok(), style: .default, handler: nil))
+		present(alertController, animated: true, completion: nil)
+	}
+	
+	func attributedString(for trophy: TrophyCase.TrophyModel) -> NSAttributedString {
+		let string = NSMutableAttributedString(string: trophy.type.rawValue.localised(),
+															attributes: boldStyle)
+		string.append(NSAttributedString(string: trophy.formattedValue(),
+													attributes: lightStyle))
+		
+		return string
+	}
+}
 
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
-
+extension TrophyCaseViewController: UICollectionViewDelegateFlowLayout {
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+		guard let flowLayout = collectionViewLayout as? TrophyCaseFlowLayout else {
+			return CGSize(width: UIScreen.main.bounds.width / 2 - 24, height: 200)
+		}
+		
+		return CGSize(width: flowLayout.itemWidth, height: flowLayout.itemHeights[indexPath.section])
+	}
 }

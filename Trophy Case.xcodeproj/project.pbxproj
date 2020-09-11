@@ -3,17 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A76BCCF524FB27FF00744224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCCF424FB27FF00744224 /* AppDelegate.swift */; };
-		A76BCCF724FB27FF00744224 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCCF624FB27FF00744224 /* SceneDelegate.swift */; };
-		A76BCCF924FB27FF00744224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCCF824FB27FF00744224 /* ViewController.swift */; };
-		A76BCCFC24FB27FF00744224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76BCCFA24FB27FF00744224 /* Main.storyboard */; };
 		A76BCCFE24FB280200744224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76BCCFD24FB280200744224 /* Assets.xcassets */; };
 		A76BCD0124FB280200744224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76BCCFF24FB280200744224 /* LaunchScreen.storyboard */; };
 		A76BCD0C24FB280200744224 /* Trophy_CaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD0B24FB280200744224 /* Trophy_CaseTests.swift */; };
+		A76BCD1824FC2C3D00744224 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD1724FC2C3D00744224 /* UIColorExtensions.swift */; };
+		A76BCD1A24FC2CBD00744224 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD1924FC2CBD00744224 /* StringUtils.swift */; };
+		A76BCD1C24FC52EB00744224 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD1B24FC52EB00744224 /* Colours.swift */; };
+		A76BCD2024FEF6E100744224 /* trophies.json in Resources */ = {isa = PBXBuildFile; fileRef = A76BCD1F24FEF6E100744224 /* trophies.json */; };
+		A76BCD2324FF064600744224 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A76BCD2224FF064600744224 /* Localizable.strings */; };
+		A76BCD2524FF0A1C00744224 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD2424FF0A1C00744224 /* NavigationController.swift */; };
+		A76BCD2724FF0A4F00744224 /* TrophyCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD2624FF0A4F00744224 /* TrophyCaseViewController.swift */; };
+		A76BCD2B24FF0C8E00744224 /* TrophyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD2A24FF0C8E00744224 /* TrophyModel.swift */; };
+		A76BCD2E24FF3E7600744224 /* TrophyCaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD2D24FF3E7600744224 /* TrophyCaseViewModel.swift */; };
+		A76BCD3224FF422800744224 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD3124FF422700744224 /* R.generated.swift */; };
+		A76BCD3624FF44B100744224 /* TrophyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD3524FF44B100744224 /* TrophyCell.swift */; };
+		A76BCD3824FF4D5B00744224 /* TrophyCaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCD3724FF4D5B00744224 /* TrophyCaseHeaderView.swift */; };
+		A76BCD3B24FF524F00744224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76BCD3924FF524F00744224 /* Main.storyboard */; };
+		A76BCD3E24FFD2A100744224 /* TrophyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76BCD3D24FFD2A100744224 /* TrophyCell.xib */; };
+		A76BCD4024FFD2C700744224 /* TrophyCaseHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76BCD3F24FFD2C700744224 /* TrophyCaseHeaderView.xib */; };
+		A7BA80B32500A24800C50712 /* TrophyCaseFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA80B22500A24800C50712 /* TrophyCaseFlowLayout.swift */; };
+		A7BA80B625068AA400C50712 /* RequestObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA80B525068AA400C50712 /* RequestObservable.swift */; };
+		A7BA80B825068B5300C50712 /* TrophyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA80B725068B5300C50712 /* TrophyLoader.swift */; };
+		C9991738A98D788EAED44078 /* Pods_Trophy_Case.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC1A954D83AB9451F9FA0DD /* Pods_Trophy_Case.framework */; };
+		DDBC80F21F83F512A44F85C9 /* Pods_Trophy_CaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5D1CE7406614D01CF7D642 /* Pods_Trophy_CaseTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +44,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AF8E0A36B8F537548411DA8 /* Pods-Trophy CaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trophy CaseTests.debug.xcconfig"; path = "Target Support Files/Pods-Trophy CaseTests/Pods-Trophy CaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AC1A954D83AB9451F9FA0DD /* Pods_Trophy_Case.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trophy_Case.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71DD8B634AC82367F5790D31 /* Pods-Trophy CaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trophy CaseTests.release.xcconfig"; path = "Target Support Files/Pods-Trophy CaseTests/Pods-Trophy CaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		A76BCCF124FB27FF00744224 /* Trophy Case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trophy Case.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76BCCF424FB27FF00744224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A76BCCF624FB27FF00744224 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A76BCCF824FB27FF00744224 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A76BCCFB24FB27FF00744224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A76BCCFD24FB280200744224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A76BCD0024FB280200744224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A76BCD0224FB280200744224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A76BCD0724FB280200744224 /* Trophy CaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trophy CaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76BCD0B24FB280200744224 /* Trophy_CaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trophy_CaseTests.swift; sourceTree = "<group>"; };
 		A76BCD0D24FB280200744224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76BCD1724FC2C3D00744224 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		A76BCD1924FC2CBD00744224 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		A76BCD1B24FC52EB00744224 /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		A76BCD1F24FEF6E100744224 /* trophies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trophies.json; sourceTree = "<group>"; };
+		A76BCD2224FF064600744224 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A76BCD2424FF0A1C00744224 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		A76BCD2624FF0A4F00744224 /* TrophyCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyCaseViewController.swift; sourceTree = "<group>"; };
+		A76BCD2A24FF0C8E00744224 /* TrophyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyModel.swift; sourceTree = "<group>"; };
+		A76BCD2D24FF3E7600744224 /* TrophyCaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyCaseViewModel.swift; sourceTree = "<group>"; };
+		A76BCD2F24FF3F1200744224 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A76BCD3124FF422700744224 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		A76BCD3524FF44B100744224 /* TrophyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyCell.swift; sourceTree = "<group>"; };
+		A76BCD3724FF4D5B00744224 /* TrophyCaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyCaseHeaderView.swift; sourceTree = "<group>"; };
+		A76BCD3A24FF524F00744224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A76BCD3D24FFD2A100744224 /* TrophyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrophyCell.xib; sourceTree = "<group>"; };
+		A76BCD3F24FFD2C700744224 /* TrophyCaseHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrophyCaseHeaderView.xib; sourceTree = "<group>"; };
+		A7BA80B22500A24800C50712 /* TrophyCaseFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyCaseFlowLayout.swift; sourceTree = "<group>"; };
+		A7BA80B525068AA400C50712 /* RequestObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestObservable.swift; sourceTree = "<group>"; };
+		A7BA80B725068B5300C50712 /* TrophyLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyLoader.swift; sourceTree = "<group>"; };
+		AB5D1CE7406614D01CF7D642 /* Pods_Trophy_CaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trophy_CaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEDF2992C0AFA3A16F1DA32 /* Pods-Trophy Case.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trophy Case.debug.xcconfig"; path = "Target Support Files/Pods-Trophy Case/Pods-Trophy Case.debug.xcconfig"; sourceTree = "<group>"; };
+		E8B357BD21483CC8E3620834 /* Pods-Trophy Case.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trophy Case.release.xcconfig"; path = "Target Support Files/Pods-Trophy Case/Pods-Trophy Case.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9991738A98D788EAED44078 /* Pods_Trophy_Case.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDBC80F21F83F512A44F85C9 /* Pods_Trophy_CaseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +102,14 @@
 		A76BCCE824FB27FF00744224 = {
 			isa = PBXGroup;
 			children = (
+				A76BCCFD24FB280200744224 /* Assets.xcassets */,
+				A76BCD3124FF422700744224 /* R.generated.swift */,
+				A76BCD2F24FF3F1200744224 /* Podfile */,
 				A76BCCF324FB27FF00744224 /* Trophy Case */,
 				A76BCD0A24FB280200744224 /* Trophy CaseTests */,
 				A76BCCF224FB27FF00744224 /* Products */,
+				E8AECBA8DB7CA43DD1B6FF94 /* Pods */,
+				EA46CAE812522B22C04E74CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +125,12 @@
 		A76BCCF324FB27FF00744224 /* Trophy Case */ = {
 			isa = PBXGroup;
 			children = (
-				A76BCCF424FB27FF00744224 /* AppDelegate.swift */,
-				A76BCCF624FB27FF00744224 /* SceneDelegate.swift */,
-				A76BCCF824FB27FF00744224 /* ViewController.swift */,
-				A76BCCFA24FB27FF00744224 /* Main.storyboard */,
-				A76BCCFD24FB280200744224 /* Assets.xcassets */,
-				A76BCCFF24FB280200744224 /* LaunchScreen.storyboard */,
+				A76BCD1E24FEF48800744224 /* data */,
+				A76BCD1D24FEEDE900744224 /* Classes */,
+				A76BCD1624FC2BB700744224 /* Extensions */,
+				A76BCD2124FF049800744224 /* Storyboards */,
 				A76BCD0224FB280200744224 /* Info.plist */,
+				A76BCD2224FF064600744224 /* Localizable.strings */,
 			);
 			path = "Trophy Case";
 			sourceTree = "<group>";
@@ -99,6 +144,128 @@
 			path = "Trophy CaseTests";
 			sourceTree = "<group>";
 		};
+		A76BCD1624FC2BB700744224 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCD1924FC2CBD00744224 /* StringUtils.swift */,
+				A76BCD1724FC2C3D00744224 /* UIColorExtensions.swift */,
+				A76BCD1B24FC52EB00744224 /* Colours.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A76BCD1D24FEEDE900744224 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCCF424FB27FF00744224 /* AppDelegate.swift */,
+				A7BA80B425068A8100C50712 /* API */,
+				A7BA80B12500A1F900C50712 /* CollectionSupport */,
+				A76BCD3424FF448600744224 /* CollectionViewItems */,
+				A76BCD2824FF0A5500744224 /* Controllers */,
+				A76BCD2924FF0A6B00744224 /* Model */,
+				A76BCD2C24FF3D7700744224 /* ViewModel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A76BCD1E24FEF48800744224 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCD1F24FEF6E100744224 /* trophies.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		A76BCD2124FF049800744224 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCD3C24FFD27900744224 /* Nibs */,
+				A76BCCFF24FB280200744224 /* LaunchScreen.storyboard */,
+				A76BCD3924FF524F00744224 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A76BCD2824FF0A5500744224 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCD2424FF0A1C00744224 /* NavigationController.swift */,
+				A76BCD2624FF0A4F00744224 /* TrophyCaseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A76BCD2924FF0A6B00744224 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCD2A24FF0C8E00744224 /* TrophyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A76BCD2C24FF3D7700744224 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCD2D24FF3E7600744224 /* TrophyCaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A76BCD3424FF448600744224 /* CollectionViewItems */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCD3724FF4D5B00744224 /* TrophyCaseHeaderView.swift */,
+				A76BCD3524FF44B100744224 /* TrophyCell.swift */,
+			);
+			path = CollectionViewItems;
+			sourceTree = "<group>";
+		};
+		A76BCD3C24FFD27900744224 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				A76BCD3F24FFD2C700744224 /* TrophyCaseHeaderView.xib */,
+				A76BCD3D24FFD2A100744224 /* TrophyCell.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		A7BA80B12500A1F900C50712 /* CollectionSupport */ = {
+			isa = PBXGroup;
+			children = (
+				A7BA80B22500A24800C50712 /* TrophyCaseFlowLayout.swift */,
+			);
+			path = CollectionSupport;
+			sourceTree = "<group>";
+		};
+		A7BA80B425068A8100C50712 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A7BA80B525068AA400C50712 /* RequestObservable.swift */,
+				A7BA80B725068B5300C50712 /* TrophyLoader.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E8AECBA8DB7CA43DD1B6FF94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDEDF2992C0AFA3A16F1DA32 /* Pods-Trophy Case.debug.xcconfig */,
+				E8B357BD21483CC8E3620834 /* Pods-Trophy Case.release.xcconfig */,
+				0AF8E0A36B8F537548411DA8 /* Pods-Trophy CaseTests.debug.xcconfig */,
+				71DD8B634AC82367F5790D31 /* Pods-Trophy CaseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA46CAE812522B22C04E74CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AC1A954D83AB9451F9FA0DD /* Pods_Trophy_Case.framework */,
+				AB5D1CE7406614D01CF7D642 /* Pods_Trophy_CaseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A76BCD1024FB280200744224 /* Build configuration list for PBXNativeTarget "Trophy Case" */;
 			buildPhases = (
+				F711BE3210E74F140BB4C552 /* [CP] Check Pods Manifest.lock */,
+				A76BCD3024FF410C00744224 /* ShellScript */,
 				A76BCCED24FB27FF00744224 /* Sources */,
 				A76BCCEE24FB27FF00744224 /* Frameworks */,
 				A76BCCEF24FB27FF00744224 /* Resources */,
+				30CBB63621BBFB6AACDDAE90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A76BCD1324FB280200744224 /* Build configuration list for PBXNativeTarget "Trophy CaseTests" */;
 			buildPhases = (
+				A895488CF8E6F594C43AEB4B /* [CP] Check Pods Manifest.lock */,
 				A76BCD0324FB280200744224 /* Sources */,
 				A76BCD0424FB280200744224 /* Frameworks */,
 				A76BCD0524FB280200744224 /* Resources */,
+				427882D9F2F494C728A5CF82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,8 +353,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A76BCD0124FB280200744224 /* LaunchScreen.storyboard in Resources */,
+				A76BCD3B24FF524F00744224 /* Main.storyboard in Resources */,
 				A76BCCFE24FB280200744224 /* Assets.xcassets in Resources */,
-				A76BCCFC24FB27FF00744224 /* Main.storyboard in Resources */,
+				A76BCD4024FFD2C700744224 /* TrophyCaseHeaderView.xib in Resources */,
+				A76BCD2324FF064600744224 /* Localizable.strings in Resources */,
+				A76BCD2024FEF6E100744224 /* trophies.json in Resources */,
+				A76BCD3E24FFD2A100744224 /* TrophyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +371,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30CBB63621BBFB6AACDDAE90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trophy Case/Pods-Trophy Case-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trophy Case/Pods-Trophy Case-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Trophy Case/Pods-Trophy Case-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		427882D9F2F494C728A5CF82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trophy CaseTests/Pods-Trophy CaseTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trophy CaseTests/Pods-Trophy CaseTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Trophy CaseTests/Pods-Trophy CaseTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A76BCD3024FF410C00744224 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		A895488CF8E6F594C43AEB4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trophy CaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F711BE3210E74F140BB4C552 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trophy Case-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A76BCCED24FB27FF00744224 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A76BCCF924FB27FF00744224 /* ViewController.swift in Sources */,
+				A76BCD1C24FC52EB00744224 /* Colours.swift in Sources */,
+				A76BCD2724FF0A4F00744224 /* TrophyCaseViewController.swift in Sources */,
+				A76BCD1A24FC2CBD00744224 /* StringUtils.swift in Sources */,
 				A76BCCF524FB27FF00744224 /* AppDelegate.swift in Sources */,
-				A76BCCF724FB27FF00744224 /* SceneDelegate.swift in Sources */,
+				A76BCD2524FF0A1C00744224 /* NavigationController.swift in Sources */,
+				A7BA80B625068AA400C50712 /* RequestObservable.swift in Sources */,
+				A7BA80B32500A24800C50712 /* TrophyCaseFlowLayout.swift in Sources */,
+				A76BCD3824FF4D5B00744224 /* TrophyCaseHeaderView.swift in Sources */,
+				A76BCD1824FC2C3D00744224 /* UIColorExtensions.swift in Sources */,
+				A76BCD2E24FF3E7600744224 /* TrophyCaseViewModel.swift in Sources */,
+				A76BCD3624FF44B100744224 /* TrophyCell.swift in Sources */,
+				A76BCD3224FF422800744224 /* R.generated.swift in Sources */,
+				A7BA80B825068B5300C50712 /* TrophyLoader.swift in Sources */,
+				A76BCD2B24FF0C8E00744224 /* TrophyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,20 +512,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A76BCCFA24FB27FF00744224 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A76BCCFB24FB27FF00744224 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A76BCCFF24FB280200744224 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A76BCD0024FB280200744224 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A76BCD3924FF524F00744224 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76BCD3A24FF524F00744224 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -360,11 +647,13 @@
 		};
 		A76BCD1124FB280200744224 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDEDF2992C0AFA3A16F1DA32 /* Pods-Trophy Case.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67VCM785B4;
 				INFOPLIST_FILE = "Trophy Case/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,17 +661,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonslater.Trophy-Case";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A76BCD1224FB280200744224 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B357BD21483CC8E3620834 /* Pods-Trophy Case.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67VCM785B4;
 				INFOPLIST_FILE = "Trophy Case/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,12 +681,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonslater.Trophy-Case";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		A76BCD1424FB280200744224 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF8E0A36B8F537548411DA8 /* Pods-Trophy CaseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +710,7 @@
 		};
 		A76BCD1524FB280200744224 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71DD8B634AC82367F5790D31 /* Pods-Trophy CaseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

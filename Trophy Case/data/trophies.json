@@ -1,0 +1,54 @@
+{
+	"personal_records": [
+		{
+			"type": "longest_run",
+			"value": 0
+		},
+		{
+			"type": "highest_elevation",
+			"value": 2095
+		},
+		{
+			"type": "fast_5k",
+			"value": 2095
+		},
+		{
+			"type": "fast_10k",
+			"value": 2095
+		},
+		{
+			"type": "half_marathon",
+			"value": 2095
+		},
+		{
+			"type": "marathon",
+			"value": -1
+		}
+	],
+	"virtual_races": [
+		{
+			"type": "virtual_half_marathon",
+			"value": 0
+		},
+		{
+			"type": "tokyo_hakone",
+			"value": 2095
+		},
+		{
+			"type": "virtual_10k",
+			"value": 2095
+		},
+		{
+			"type": "hakone_ekiden",
+			"value": 2095
+		},
+		{
+			"type": "singapore_ekiden",
+			"value": 2095
+		},
+		{
+			"type": "virtual_5k",
+			"value": 2095
+		}
+	]
+}

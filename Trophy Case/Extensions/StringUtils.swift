@@ -1,9 +1,9 @@
 //
-//  TDString.swift
-//  TDMobileUI
+//  UIColorExtensions.swift
+//  UIKit Enhancements
 //
-//  Created by Jason Slater on 2017-01-12.
-//  Copyright © 2017 TD Digital Channels. All rights reserved.
+//  Created by Jason Slater on 2016-12-28.
+//  Copyright © 2016 Jason Slater. All rights reserved.
 //
 
 import UIKit
@@ -42,4 +42,14 @@ public extension String {
 		return isRGB()
 	}
 	
+}
+
+
+// MARK: - Localisation
+// Convenience function to quicky localise strings. ex: "MyString".localised()
+
+public extension String {
+	nonmutating func localised(withComment comment: String = "", bundle: Bundle = Bundle.main) -> String {
+		return NSLocalizedString(self, tableName: nil, bundle: bundle, value: "", comment: comment)
+	}
 }

@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import RxSwift
+
+class TrophyLoader {
+	static let shared = TrophyLoader()
+	
+	lazy var requestObservable = RequestObservable(config: .default)
+	
+	private init() {}
+	
+	func loadCase() throws -> Observable<TrophyCase.CaseModel>? {
+		guard let url = R.file.trophiesJson() else { throw RequestObservable.RequestError.noData }
+		
+		return requestObservable.loadJSON(url: url)
+	}
+}

@@ -1,5 +1,5 @@
 /* 
-  copy.strings
+  Localizable.strings
   Trophy Case
 
   Created by Jason Slater on 2020-09-01.
@@ -18,3 +18,9 @@
 "hakone_ekiden" = "Hakone Ekiden";
 "singapore_ekiden" = "Mizuno Singapore Ekiden 2020";
 "virtual_5k" = "Virtual 5K Race";
+
+"personal_records" = "Personal Records";
+"virtual_races" = "Virtual Races";
+
+"couldnt_load" = "Couldn't load the trophy data.";
+"ok" = "OK";
